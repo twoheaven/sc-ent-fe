@@ -23,7 +23,7 @@ const FieldSection = () => {
   const [fields, setFields] = useState<Field[]>([]);
 
   useEffect(() => {
-    fetch("https://mediarts.co.kr/api/fields/get")
+    fetch("https://cat-project.xyz/api/fields/get")
       .then((response) => response.json())
       .then((data) => {
         setFields(data);
